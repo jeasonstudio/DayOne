@@ -1,9 +1,10 @@
 package main
 
 import (
-	_ "DayOne/model"
+	"fmt"
 )
 
 func main() {
-	sendEmail()
+	a := sendEmail()
+	fmt.Println(a)
 }

@@ -1,16 +1,16 @@
-package model
+package dayone
 
 import (
 	"gopkg.in/gomail.v2"
 )
 
 const (
-	HOST        = "smtp.exmail.qq.com"
-	SERVER_ADDR = "smtp.exmail.qq.com:25"
-	ALIAS       = "每天一题"
-	SUBJECT     = "每天一题"
-	USER        = "mailbyjeason@jeasonstudio.cn" //发送邮件的邮箱
-	PASSWORD    = "Admin12345"                   //发送邮件邮箱的密码
+	HOST       = "smtp.exmail.qq.com"
+	SERVERADDR = "smtp.exmail.qq.com:25"
+	ALIAS      = "每天一题"
+	SUBJECT    = "每天一题"
+	USER       = "mailbyjeason@jeasonstudio.cn" //发送邮件的邮箱
+	PASSWORD   = "Admin12345"                   //发送邮件邮箱的密码
 )
 
 func sendEmail() string {

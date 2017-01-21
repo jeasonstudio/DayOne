@@ -3,6 +3,6 @@ package main
 import "fmt"
 
 func main() {
-	a := sendEmail()
+	a := dayone.sendEmail()
 	fmt.Println(a)
 }

@@ -6,8 +6,9 @@ import (
 	"gopkg.in/gomail.v2"
 )
 
+// const HOST 数据库相关配置
 const (
-	HOST     = "smtp.exmail.qq.com" //HOST 邮件服务器
+	HOST     = "smtp.exmail.qq.com"
 	PORT     = 25
 	SUBJECT  = "每日一题"
 	USER     = "mailbyjeason@jeasonstudio.cn"
@@ -20,7 +21,9 @@ func SendEmail(innerHTML string) {
 	m := gomail.NewMessage()
 	m.SetAddressHeader("From", USER, "Jeason")
 	m.SetHeader("To",
-		m.FormatAddress("zjtong3576@sina.com", "Jeason"),
+		// m.FormatAddress("zjtong3576@sina.com", "Jeason"),
+		// m.FormatAddress("me@jeasonstudio.cn", "Jeason"),
+		m.FormatAddress("748807384@qq.com", " 傻了吧唧的贾同学"),
 	)
 
 	m.SetHeader("Subject", SUBJECT)

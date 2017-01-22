@@ -1,10 +1,10 @@
 package main
 
-import (
-	dayone "DayOne/dayone"
-)
+import dayone "DayOne/dayone"
 
 func main() {
-	dayone.SendEmail("TEST")
+	m, _ := dayone.Spy()
+	dayone.SendEmail(m)
+	// fmt.Println(m)
 	// fmt.Println(a)
 }

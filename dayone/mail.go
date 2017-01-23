@@ -22,7 +22,7 @@ func SendEmail(innerHTML string) {
 	m.SetAddressHeader("From", USER, "Jeason")
 	m.SetHeader("To",
 		// m.FormatAddress("zjtong3576@sina.com", "Jeason"),
-		// m.FormatAddress("me@jeasonstudio.cn", "Jeason"),
+		m.FormatAddress("me@jeasonstudio.cn", "Jeason"),
 		m.FormatAddress("748807384@qq.com", " 傻了吧唧的贾同学"),
 	)
 
